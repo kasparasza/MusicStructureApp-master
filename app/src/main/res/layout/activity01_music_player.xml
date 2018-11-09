@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity01_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/old_audio_cassette"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_view_padding"
+    tools:context="com.example.kasparasza.musicstructureapp.MusicPlayer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_purpose_text"
+            style="@style/Explanatory_TextView_Style_01"
+            android:text="@string/Activity_01_purpose_text" />
+
+        <LinearLayout style="@style/LinearLayout_style_01">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/set_training_type_button"
+                style="@style/Card_View_Style_01">
+
+                <LinearLayout style="@style/LinearLayout_style_02">
+
+                    <ImageView
+                        android:id="@+id/set_training_type_image"
+                        style="@style/Image_Style_01"
+                        android:src="@drawable/level_list_01" />
+
+                    <TextView
+                        android:id="@+id/training_type_text"
+                        style="@style/Card_TextView_Style_01"
+                        android:text="@string/training_type_01" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/length_of_empty_view_01"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/choose_music_button"
+                style="@style/Card_View_Style_01">
+
+                <LinearLayout style="@style/LinearLayout_style_02">
+
+                    <ImageView
+                        android:id="@+id/choose_music_image"
+                        style="@style/Image_Style_01"
+                        android:src="@drawable/music_library_image" />
+
+                    <TextView
+                        style="@style/Card_TextView_Style_01"
+                        android:text="@string/text_002" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/length_of_empty_view_01"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/go_to_more_settings_button"
+                style="@style/Card_View_Style_01">
+
+                <LinearLayout style="@style/LinearLayout_style_02">
+
+                    <ImageView
+                        style="@style/Image_Style_01"
+                        android:src="@drawable/more_settings_image" />
+
+                    <TextView
+                        style="@style/Card_TextView_Style_01"
+                        android:text="@string/text_003" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Explanatory_TextView_Style_02"
+            android:layout_marginBottom="@dimen/space_between_textViews_01"
+            android:layout_marginTop="@dimen/space_between_textViews_02"
+            android:text="@string/text_010" />
+
+        <LinearLayout style="@style/LinearLayout_style_01">
+
+            <ImageButton
+                android:id="@+id/last_song_button"
+                style="@style/Button_Style_01"
+                android:src="@drawable/last_song_button" />
+
+            <View
+                android:layout_width="@dimen/one_dp_length"
+                android:layout_height="match_parent"
+                android:background="@color/empty_view_color" />
+
+            <ImageButton
+                android:id="@+id/play_pause_button"
+                style="@style/Button_Style_01"
+                android:src="@drawable/level_list_02" />
+
+            <View
+                android:layout_width="@dimen/one_dp_length"
+                android:layout_height="match_parent"
+                android:background="@color/empty_view_color" />
+
+            <ImageButton
+                android:id="@+id/next_song_button"
+                style="@style/Button_Style_01"
+                android:src="@drawable/next_song_button" />
+
+            <View
+                android:layout_width="@dimen/one_dp_length"
+                android:layout_height="match_parent"
+                android:background="@color/empty_view_color" />
+
+            <ImageButton
+                android:id="@+id/repeat_shuffle_button"
+                style="@style/Button_Style_01"
+                android:src="@drawable/level_list_03" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

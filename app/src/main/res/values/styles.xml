@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#455A64</item>
+        <item name="colorAccent">#263238</item>
+    </style>
+
+    <!-- Styles used for TextViews -->
+    <style name="Explanatory_TextView_Style_01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/height_explanatory_textView_01</item>
+        <item name="android:layout_marginBottom">@dimen/space_between_textViews_01</item>
+        <item name="android:background">@color/button_background_color</item>
+    </style>
+
+    <style name="Explanatory_TextView_Style_02">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_explanatory_textView_01</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/button_background_color</item>
+    </style>
+
+    <style name="TextViewStyle_01" parent="TextAppearance.AppCompat">
+        <item name="android:textAppearance">@style/Theme.AppCompat.Light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/space_between_textViews_01</item>
+        <item name="android:layout_marginBottom">@dimen/space_between_textViews_01</item>
+        <item name="android:background">@color/button_background_color</item>
+    </style>
+
+    <!-- Styles used for CardViews -->
+    <style name="Card_TextView_Style_01">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/text_height_01</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_02</item>
+    </style>
+
+    <style name="Card_View_Style_01">
+        <item name="android:layout_width">@dimen/zero_length</item>
+        <item name="android:layout_height">@dimen/cardViewHeight</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Styles used for Images -->
+    <style name="Image_Style_01">
+        <item name="android:layout_width">@dimen/image_size_01</item>
+        <item name="android:layout_height">@dimen/image_size_01</item>
+        <item name="android:layout_marginBottom">@dimen/space_below_image_01</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Styles used for ImagesButtons -->
+    <style name="Button_Style_01">
+        <item name="android:layout_width">@dimen/zero_length</item>
+        <item name="android:layout_height">@dimen/image_size_01</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/zero_length</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/button_background_color</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Styles used for CheckBoxes -->
+    <style name="CheckBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/checkBoxMarginBetween</item>
+        <item name="android:paddingLeft">@dimen/checkBoxPadding</item>
+    </style>
+
+    <!-- Styles used for LinearLayouts -->
+    <style name="LinearLayout_style_01">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/parent_view_margin</item>
+        <item name="android:layout_marginRight">@dimen/parent_view_margin</item>
+        <item name="android:layout_marginTop">@dimen/parent_view_margin</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearLayout_style_02">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/cardViewPadding</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Styles of EditText -->
+    <style name="EditText_style_01">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_03</item>
+        <item name="android:gravity">right</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+</resources>

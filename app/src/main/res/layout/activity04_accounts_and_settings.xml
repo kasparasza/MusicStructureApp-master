@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity04_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/old_audio_cassette"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_view_padding"
+    tools:context="com.example.kasparasza.musicstructureapp.LinkYourAppsAndAccountsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity04_purpose_text"
+            style="@style/Explanatory_TextView_Style_01"
+            android:layout_height="wrap_content"
+            android:text="@string/Activity_04_purpose_text" />
+
+        <TextView
+            android:id="@+id/go_to_player_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_background_color"
+            android:text="@string/text_004"
+            android:textSize="@dimen/text_size_01"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

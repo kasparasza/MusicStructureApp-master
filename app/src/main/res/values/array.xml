@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="training_type_string_array">
+        <item>@string/training_type_01</item>
+        <item>@string/training_type_02</item>
+        <item>@string/training_type_03</item>
+        <item>@string/training_type_04</item>
+        <item>@string/training_type_05</item>
+    </string-array>
+
+    <string-array name="link_run_to_music_string_array">
+        <item>@string/link_run_to_music_01</item>
+        <item>@string/link_run_to_music_02</item>
+    </string-array>
+
+    <string-array name="coach_support_array">
+        <item>@string/coach_support_01</item>
+        <item>@string/coach_support_02</item>
+        <item>@string/coach_support_03</item>
+    </string-array>
+
+    <string-array name="repeat_and_shuffle_array">
+        <item>@string/text_006</item>
+        <item>@string/text_007</item>
+        <item>@string/text_008</item>
+        <item>@string/text_009</item>
+    </string-array>
+
+    <string-array name="music_source_array">
+        <item>@string/text_011</item>
+        <item>@string/text_012</item>
+    </string-array>
+
+</resources>

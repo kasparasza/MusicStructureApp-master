@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dimensions of TextViews:-->
+    <dimen name="height_explanatory_textView_01">128dp</dimen>
+    <dimen name="space_between_textViews_01">8dp</dimen>
+    <dimen name="space_between_textViews_02">16dp</dimen>
+    <dimen name="text_size_01">16sp</dimen>
+    <dimen name="text_size_02">12sp</dimen>
+    <dimen name="text_size_03">20sp</dimen>
+
+    <!-- Dimensions of CardViews:-->
+    <dimen name="image_size_01">80dp</dimen>
+    <dimen name="space_below_image_01">8dp</dimen>
+    <dimen name="text_width_01">120dp</dimen>
+    <dimen name="text_height_01">36dp</dimen>
+    <dimen name="cardViewPadding">8dp</dimen>
+    <dimen name="cardViewHeight">144dp</dimen>
+
+    <!-- Dimensions of CheckBoxes -->
+    <dimen name="checkBoxPadding">8dp</dimen>
+    <dimen name="checkBoxMarginBetween">-8dp</dimen>
+
+    <!-- Dimensions of parent views -->
+    <dimen name="parent_view_padding">8dp</dimen>
+    <dimen name="parent_view_margin">8dp</dimen>
+
+    <!-- Dimensions of ScrollViews -->
+    <dimen name="height_ScrollView_01">128dp</dimen>
+
+    <!-- Dimensions of empty Views:-->
+    <dimen name="length_of_empty_view_01">16dp</dimen>
+
+    <!-- Other specific dimensions:-->
+    <dimen name="zero_length">0dp</dimen>
+    <dimen name="one_dp_length">1dp</dimen>
+
+</resources>

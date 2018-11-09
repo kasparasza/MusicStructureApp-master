@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">MusicStructureApp</string>
+
+    <!-- Labels of the activities -->
+    <string name="Label_01">Music player</string>
+    <string name="Label_02">Set your training</string>
+    <string name="Label_03">Choose music</string>
+    <string name="Label_04">Accounts and settings</string>
+
+    <!-- Used by a number of activities -->
+    <string name="text_004">Start music player</string>
+
+    <!-- Used in activity01_music_player -->
+    <string name="text_002">Choose music</string>
+    <string name="text_003">More settings</string>
+    <string name="text_006">repeat and shuffle is off</string>
+    <string name="text_007">repeat is on</string>
+    <string name="text_008">shuffle is on</string>
+    <string name="text_009">repeat and shuffle is on</string>
+    <string name="text_010">
+                <b>SONGS BEING PLAYED</b>\n
+        This is where the songs being played are shown: song, artist, album, playlist name, time elapsed, etc.
+        </string>
+
+    <!-- Used in activity02_set_training_type -->
+    <string name="training_type_01">Warm up / Recovery</string>
+    <string name="training_type_02">Fartlek</string>
+    <string name="training_type_03">VO2 max</string>
+    <string name="training_type_04">Tempo run</string>
+    <string name="training_type_05">Long run</string>
+
+    <string name="link_run_to_music">Link my run and music</string>
+    <string name="link_run_to_music_01">On</string>
+    <string name="link_run_to_music_02">Off</string>
+
+    <string name="coach_support">Background coach support</string>
+    <string name="coach_support_01">On</string>
+    <string name="coach_support_02">Partial</string>
+    <string name="coach_support_03">Off</string>
+
+    <string name="set_run_param_01">Distance per run</string>
+    <string name="set_run_param_02">meters</string>
+    <string name="set_run_param_03">Number of run repeats</string>
+    <string name="set_run_param_04">#</string>
+    <string name="set_run_param_05">Distance of break</string>
+    <string name="set_run_param_06">meters</string>
+
+    <!-- Used in activity03_choose_music -->
+    <string name="text_005">Choose music from your device</string>
+    <string name="text_011">Play from my device</string>
+    <string name="text_012">Play from my apps</string>
+    <string name="text_013">Choose music style</string>
+    <string name="text_014">Choose playlist</string>
+    <string name="text_015">Choose artist / album</string>
+    <string name="text_016">
+                <b>PLAYLISTS</b>\n
+        This is where further details of the music library are shown.
+        Contents of the playlists list should be dependent on the music style selections made.
+        </string>
+    <string name="text_017">
+                <b>ARTISTS, ALBUMS AND SONGS</b>\n
+        This is where further details of the music library are shown.
+        Contents of the artists/ albums/ songs list should be dependent on the music style and playlist selections made.
+        </string>
+
+    //used in music_style list
+    <string name="music_style_01">club / house</string>
+    <string name="music_style_02">funk</string>
+    <string name="music_style_03">heavy metal</string>
+    <string name="music_style_04">hip-hop</string>
+    <string name="music_style_05">indie</string>
+    <string name="music_style_06">pop</string>
+    <string name="music_style_07">punk</string>
+    <string name="music_style_08">rock</string>
+    <string name="music_style_09">classic rock</string>
+    <string name="music_style_10">now in charts</string>
+    <string name="music_style_11">electro</string>
+    <string name="music_style_12">dubstep</string>
+
+    <!-- Strings that explain the purpose of each activity -->
+    <string name="Activity_01_purpose_text"><b>Purpose of the activity:</b>\n\n
+This activity is both the main interface and the music player.\n\n
+All other activities (Set your training, Choose music, Accounts and settings) can be accessed by clicking their button. The button for Set your training activity shows to the user main information about the type of training that is currently selected. It changes its appearance as the selections of the user change.\n\n
+Next information about the songs that are currently played is provided. In the bottom of the screen there are 4 basic buttons to control the playback: last song, next song, play / pause, switch repeat / shuffle / or both on / off. Two of buttons can perform more than one action. This was done in order to decrease the number and complexity of views used.\n\n
+<b>Some of the additional technical improvements / challenges:</b>\n\n
+1) Implementation of Media Player itself: https://developer.android.com/guide/topics/media/mediaplayer.html \n
+2) Implementation of Background Service. This would ensure that music is played if another activity is started or the app goes into background. Link to possible implementation: https://developer.android.com/training/run-background-service/create-service.html \n
+3) Implementation of Download Manager. This would allow to stream large quantity of information from internet (music files, album images, etc.). Link to possible implementation:
+https://developer.android.com/reference/android/app/DownloadManager.html \n\n
+    </string>
+    <string name="Activity_02_purpose_text"><b>Purpose of the activity:</b>\n\n
+In this activity the user can choose the type of running exercise he / she will perform and how his / her performance will be linked to the music.\n\n
+Buttons in the first row are: button to choose one of the 5 main run exercises; button to go back to Music player activity. EditTexts in the second row are used to set the distance of the exercise and the number of it repeats.\n\n
+Buttons in the bottom: link / unlink run to music playback, add background coach support. If training and playback are unlinked - a simple music playback shall be performed. Otherwise the app should react to the run performance. For example the app would determine the music being streamed based on the type of training (e.g. long run or tempo run), stage of the training (e.g. early sections of the run vs the last kilometer), performance of the user (e.g. tempo is reducing vs the runner is running at a constant pace), etc. Partial coach support would provide background voice information when specific stage of exercise is completed (e.g. there are 5 km left; pace of the previous km completed is, etc.). With full coach support more background information would be provided with some performance advice (e.g. this run repeat was slower by 5 seconds than your average; your pace is too high, etc.).\n\n
+<b>Some of the additional technical improvements / challenges:</b>\n\n
+1) The app should get information about the users physical activity form other applications, e.g. Endomondo. An interface with these other apps is needed. Link to possible implementation: https://developer.android.com/guide/components/broadcasts.html \n
+2) Based on the users physical activity the app should send intents to other applications which would affect the music being played. \n\n
+    </string>
+    <string name="Activity_03_purpose_text"><b>Purpose of the activity:</b>\n\n
+The user can specify the source of the music and his listening preferences. There are two options for the source: music from device and music streamed from other apps. The switch between the options is controlled by a button. Another button returns the user to Music player activity.\n\n
+The user can set the following listening preferences: music styles, playlist, specific artist or album. Music style selection should determine the playlists and artists / bands available for selection; playlist selection should work in the same way with regard to artists / bands. However, this part was not coded in the app. If implemented, the combination of selections by the user: link run and music (from activity Set your training), play music from apps, music style or a few styles selected should be used by the music player app to determine the songs that are being played.\n\n
+<b>Some of the additional technical improvements / challenges:</b>\n\n
+1) The UI of the activity could be improved. RecyclerView could be used instead for each group of the selections (style, playlist, artist). It could replace a simple LinearLayout with checkboxes. Link to possible implementation: https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html \n
+2) Additional selection aids could be added, like uncheck all boxes at once. Link to code: https://stackoverflow.com/questions/30565374/uncheck-all-check-boxes-in-android \n\n
+    </string>
+    <string name="Activity_04_purpose_text"><b>Purpose of the activity:</b>\n\n
+Here the user enters the data of the accounts that he / she has in a music streaming app (such as Spotify, Pandora, Last.fm, etc.) and physical activity tracking app (such as Endomondo, Strava, MapMyFitness, etc.). With these apps the Music player app will be communicating. One music streaming app and one fitness app is necessary.\n\n
+Other additional settings of the Music player app  are provided in this activity, such as: coach voice preferences, app appearance / color preset, metric / imperial measurement system, etc.\n
+    </string>
+
+</resources>

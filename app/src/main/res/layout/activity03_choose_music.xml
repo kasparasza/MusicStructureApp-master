@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity03_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/old_audio_cassette"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_view_padding"
+    tools:context="com.example.kasparasza.musicstructureapp.ChooseMusicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity03_purpose_text"
+            style="@style/Explanatory_TextView_Style_01"
+            android:text="@string/Activity_03_purpose_text" />
+
+        <LinearLayout style="@style/LinearLayout_style_01">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/music_source_button"
+                style="@style/Card_View_Style_01">
+
+                <LinearLayout style="@style/LinearLayout_style_02">
+
+                    <ImageView
+                        android:id="@+id/music_source_image"
+                        style="@style/Image_Style_01"
+                        android:src="@drawable/level_list_04" />
+
+                    <TextView
+                        android:id="@+id/music_source_text"
+                        style="@style/Card_TextView_Style_01"
+                        android:text="@string/text_011" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="@dimen/length_of_empty_view_01"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/start_music_player_button_02"
+                style="@style/Card_View_Style_01">
+
+                <LinearLayout style="@style/LinearLayout_style_02">
+
+                    <ImageView
+                        style="@style/Image_Style_01"
+                        android:src="@drawable/play_music_image" />
+
+                    <TextView
+                        style="@style/Card_TextView_Style_01"
+                        android:text="@string/text_004" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewStyle_01"
+            android:text="@string/text_013" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/one_dp_length"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_01"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_01" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_02"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_02" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_03"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_03" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_04"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_04" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_05"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_05" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_06"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_06" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/one_dp_length"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_07"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_07" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_08"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_08" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_09"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_09" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_10"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_10" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_11"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_11" />
+
+                <CheckBox
+                    android:id="@+id/music_style_chB_12"
+                    style="@style/CheckBoxStyle"
+                    android:text="@string/music_style_12" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewStyle_01"
+            android:text="@string/text_014" />
+
+        <TextView
+            style="@style/Explanatory_TextView_Style_02"
+            android:text="@string/text_016" />
+
+        <TextView
+            style="@style/TextViewStyle_01"
+            android:text="@string/text_015" />
+
+        <TextView
+            style="@style/Explanatory_TextView_Style_02"
+            android:text="@string/text_017" />
+
+    </LinearLayout>
+
+</ScrollView>
+
